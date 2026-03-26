@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>VOID THREADS</title>
+
+
+
+  <!-- MOBILE FIX (MOST IMPORTANT) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background-color: #000;
+
+      color: #fff;
+
+    }
+
+
+
+    header {
+
+      background: #0a0a0a;
+
+      padding: 20px;
+
+      text-align: center;
+
+      border-bottom: 2px solid red;
+
+    }
+
+
+
+    header h1 {
+
+      margin: 0;
+
+      color: red;
+
+      letter-spacing: 3px;
+
+      font-size: 24px;
+
+    }
+
+
+
+    nav {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      padding: 10px;
+
+      background: #111;
+
+    }
+
+
+
+    nav a {
+
+      color: white;
+
+      margin: 5px 10px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+
+
+    nav a:hover {
+
+      color: red;
+
+    }
+
+
+
+    .hero {
+
+      padding: 60px 20px;
+
+      text-align: center;
+
+      background: linear-gradient(black, #111);
+
+    }
+
+
+
+    .hero h2 {
+
+      font-size: 28px;
+
+      color: red;
+
+    }
+
+
+
+    .section {
+
+      padding: 30px 15px;
+
+    }
+
+
+
+    .section h2 {
+
+      border-left: 5px solid red;
+
+      padding-left: 10px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+
+    .section p {
+
+      max-width: 700px;
+
+      margin-bottom: 20px;
+
+      color: #ccc;
+
+      font-size: 14px;
+
+    }
+
+
+
+    .card {
+
+      background: #111;
+
+      padding: 15px;
+
+      margin: 15px 0;
+
+      border: 1px solid #222;
+
+      transition: 0.3s;
+
+    }
+
+
+
+    .card:hover {
+
+      border-color: red;
+
+      transform: scale(1.02);
+
+    }
+
+
+
+    .rating {
+
+      color: red;
+
+      font-weight: bold;
+
+    }
+
+
+
+    .image-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+      gap: 10px;
+
+      margin-top: 20px;
+
+    }
+
+
+
+    .image-grid img {
+
+      width: 100%;
+
+      height: auto;
+
+      object-fit: cover;
+
+      border: 2px solid #111;
+
+      transition: 0.3s;
+
+    }
+
+
+
+    .image-grid img:hover {
+
+      border-color: red;
+
+      transform: scale(1.05);
+
+    }
+
+
+
+    footer {
+
+      text-align: center;
+
+      padding: 20px;
+
+      background: #0a0a0a;
+
+      border-top: 2px solid red;
+
+      font-size: 12px;
+
+    }
+
+
+
+    button {
+
+      background: red;
+
+      border: none;
+
+      padding: 10px 20px;
+
+      color: white;
+
+      cursor: pointer;
+
+      margin-top: 10px;
+
+    }
+
+
+
+    button:hover {
+
+      background: darkred;
+
+    }
+
+
+
+    /* MOBILE RESPONSIVE */
+
+    @media (max-width: 600px) {
+
+
+
+      header h1 {
+
+        font-size: 20px;
+
+      }
+
+
+
+      .hero {
+
+        padding: 40px 15px;
+
+      }
+
+
+
+      .hero h2 {
+
+        font-size: 22px;
+
+      }
+
+
+
+      nav {
+
+        flex-direction: column;
+
+      }
+
+
+
+      .card {
+
+        padding: 12px;
+
+      }
+
+
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+  <h1>VOID THREADS</h1>
+
+  <p>Streetwear Reviews | Style Guides | Trend Reports</p>
+
+</header>
+
+
+
+<nav>
+
+  <a href="#reviews">Reviews</a>
+
+  <a href="#guides">Style Guides</a>
+
+  <a href="#trends">Trends</a>
+
+  <a href="#gallery">Gallery</a>
+
+</nav>
+
+
+
+<section class="hero">
+
+  <h2>Elevate Your Style</h2>
+
+  <p>
+
+    VOID THREADS helps you stay ahead of fashion trends with honest reviews,
+
+    styling advice, and real insight into modern streetwear culture.
+
+  </p>
+
+</section>
+
+
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="section">
+
+  <h2>🔥 Product Reviews</h2>
+
+  <p>
+
+    We break down trending pieces so you know what’s actually worth buying.
+
+    No hype — just real feedback on quality, fit, and value.
+
+  </p>
+
+
+
+  <div class="card">
+
+    <h3>Oversized Graphic Hoodie</h3>
+
+    <p>
+
+      Heavyweight material with a strong oversized fit. Holds shape well
+
+      and keeps its design after multiple washes.
+
+    </p>
+
+    <p class="rating">Rating: 8.5/10</p>
+
+    <button onclick="alert('Durable and stylish. Great everyday piece.')">Read More</button>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <h3>Stacked Denim Jeans</h3>
+
+    <p>
+
+      Clean stacking effect but runs slightly small. Good for style,
+
+      average durability.
+
+    </p>
+
+    <p class="rating">Rating: 7/10</p>
+
+    <button onclick="alert('Size up for best fit.')">Read More</button>
+
+  </div>
+
+</section>
+
+
+
+<!-- STYLE GUIDES -->
+
+<section id="guides" class="section">
+
+  <h2>🧠 Style Guides</h2>
+
+  <p>
+
+    Learn how to build outfits that actually look good. We focus on layering,
+
+    proportions, and combining pieces the right way.
+
+  </p>
+
+
+
+  <div class="card">
+
+    <h3>Streetwear Basics</h3>
+
+    <p>
+
+      Stick to neutral tones and oversized fits. Build simple outfits before
+
+      adding louder statement pieces.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <h3>Layering Like a Pro</h3>
+
+    <p>
+
+      Combine hoodies, tees, and jackets to create depth and contrast
+
+      in your outfit.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- TRENDS -->
+
+<section id="trends" class="section">
+
+  <h2>📈 Trending Now</h2>
+
+  <p>
+
+    Stay updated with what’s hot right now so you can stay ahead
+
+    without chasing every trend blindly.
+
+  </p>
+
+
+
+  <div class="card">
+
+    <h3>Y2K Revival</h3>
+
+    <p>
+
+      Baggy jeans, bold graphics, and vintage aesthetics are making a strong comeback.
+
+    </p>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <h3>Minimalist Streetwear</h3>
+
+    <p>
+
+      Clean designs and subtle branding are becoming more popular than loud prints.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+
+  <h2>📸 Style Inspiration</h2>
+
+  <p>
+
+    These looks show how to combine pieces into clean outfits.
+
+    Use this as inspiration to build your own style.
+
+  </p>
+
+
+
+  <div class="image-grid">
+
+    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Streetwear outfit">
+
+    <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c" alt="Fashion hoodie">
+
+    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" alt="Urban fashion">
+
+    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Modern street style">
+
+  </div>
+
+</section>
+
+
+
+<footer>
+
+  <p>© 2026 VOID THREADS</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
